@@ -19,6 +19,12 @@ app.set("view engine", "pug");
 app.use("/login", login);
 app.use("/register", register);
 
+app.get("/", (req, res) => {
+  res.redirect("/login");
+});app.get("/", (req, res) => {
+  res.redirect("/login");
+});
+
 app.get("/home", (req, res) => {
   res.send("Conexion exitosa");
 });
